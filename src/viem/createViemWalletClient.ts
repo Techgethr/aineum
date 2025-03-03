@@ -1,6 +1,6 @@
 import { createWalletClient, http } from "viem";
 import { privateKeyToAccount } from "viem/accounts";
-import { electroneumTestnet } from 'viem/chains'
+import { electroneumNetwork } from "./configureElectroneumChain";
 
 
 /**
@@ -27,7 +27,7 @@ export function createViemWalletClient() {
   // Create the wallet client
   return createWalletClient({
     account,
-    chain: electroneumTestnet,
+    chain: electroneumNetwork,
     transport: http(),
   });
 }

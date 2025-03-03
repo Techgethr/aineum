@@ -1,5 +1,5 @@
 import { createPublicClient, http } from "viem";
-import { electroneumTestnet } from 'viem/chains';
+import { electroneumNetwork } from "./configureElectroneumChain";
 
 /**
  * Creates a new public Viem client connected to the Electroneum network.
@@ -16,7 +16,7 @@ export function createViemPublicClient() {
      *
      * In this case, we're using the Electroneum network.
      */
-    chain: electroneumTestnet,
+    chain: electroneumNetwork,
 
     /**
      * The transport to use for HTTP requests.
