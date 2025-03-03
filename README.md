@@ -80,6 +80,13 @@ The assistant has access to various tools for performing blockchain operations:
   - Configurable initial supply
   - Standard ERC20 functionality
 
+## How to extend
+
+1. Create a new tool in the _tools_ folder.
+2. Add the function in the tool.
+3. Register the tool in [allTools](./tools/allTools.ts)
+4. Update the prompt (**in the prompt file inside the constants folder**) for the assistant to understand when it must run the tool.
+
 ## Codebase Flow
 
 The following sequence diagram illustrates the core flow of the application:
